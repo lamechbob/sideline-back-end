@@ -1,4 +1,4 @@
-# 🐾 South Broward Football – Backend (AWS + Postgres)
+# Sideline Backend (AWS)
 
 This repository contains the backend infrastructure for **Project Sideline**, the South Broward High School football statistics system.  
 It includes AWS Lambda functions for importing and managing data, plus the SQL logic powering the Streamlit dashboard.
@@ -117,16 +117,14 @@ YYYY_Team_Name_Roster.xlsx
 - Year must be between **2000–2100**
 
 ### Examples — ✅ Valid
-2025_South_Broward_Roster.xlsx
-2024_Miami-Northwestern_Roster.xlsx
-
+- 2025_South_Broward_Roster.xlsx
+- 2024_Miami_Northwestern_Roster.xlsx
 
 ### Examples — ❌ Invalid
-South_Broward_Roster.xlsx
-25_South_Broward_Roster.xlsx
-2025_South_Broward.xlsx
-2025__Roster.xlsx
-
+- South_Broward_Roster.xlsx 
+- 25_South_Broward_Roster.xlsx
+- 2025_South_Broward.xlsx
+- 2025__Roster.xlsx
 
 ---
 
@@ -145,8 +143,8 @@ Both functions use the **exact same validation logic**, ensuring the roster and 
 ### Required Filename Pattern
 Two valid patterns are allowed:
 
-GameID_Team_Name_GameStats.xlsx
-GameID_Team_Name_Game_Stats.xlsx
+- GameID_Team_Name_GameStats.xlsx
+- GameID_Team_Name_Game_Stats.xlsx
 
 
 ### Rules
@@ -158,17 +156,16 @@ GameID_Team_Name_Game_Stats.xlsx
 - Team names may use underscores or hyphens (converted automatically)
 
 ### Examples — ✅ Valid
-42_South_Broward_GameStats.xlsx
-42_South_Broward_Game_Stats.xlsx
-108_Miami-Norland_GameStats.xlsx
+- 42_South_Broward_GameStats.xlsx
+- 42_South_Broward_Game_Stats.xlsx
+- 108_Miami_Norland_GameStats.xlsx
 
 
 ### Examples — ❌ Invalid
-South_Broward_GameStats.xlsx
-42_South_Broward.xlsx
-42__GameStats.xlsx
-42_South_Broward_Gamestats.xlsx
-
+- South_Broward_GameStats.xlsx
+- 42_South_Broward.xlsx
+- 42__GameStats.xlsx
+- 42_South_Broward_Gamestats.xlsx
 
 ---
 
